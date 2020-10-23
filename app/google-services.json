@@ -1,42 +1,42 @@
 {
   "project_info": {
-    "project_number": "165085031068",
-    "firebase_url": "https://platziconfapp-7e5a6.firebaseio.com",
-    "project_id": "platziconfapp-7e5a6",
-    "storage_bucket": "platziconfapp-7e5a6.appspot.com"
+    "project_number": "847994541518",
+    "firebase_url": "https://platziconfapp-baae3.firebaseio.com",
+    "project_id": "platziconfapp-baae3",
+    "storage_bucket": "platziconfapp-baae3.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:165085031068:android:3530e0c57af35745081b59",
+        "mobilesdk_app_id": "1:847994541518:android:3ad4f2bd5c21567f4e479f",
         "android_client_info": {
-          "package_name": "com.example.platziconf"
+          "package_name": "com.platzi.platziconf"
         }
       },
       "oauth_client": [
         {
-          "client_id": "165085031068-jfpg9prh7hk1t2k9evc68apk8qbmr2j2.apps.googleusercontent.com",
+          "client_id": "847994541518-t9be6viu6mbc0ga9k8gueesdk06njpuo.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.example.platziconf",
+            "package_name": "com.platzi.platziconf",
             "certificate_hash": "3ad354ed17195fcefae2089e2311397e5c4ca94f"
           }
         },
         {
-          "client_id": "165085031068-voq9ee77pdvmm805rqpbokghndtsqkk4.apps.googleusercontent.com",
+          "client_id": "847994541518-vb6u22goevrc2d8jr5bu39fhhq7i5fib.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCcJUjatSrT8S4FAMIFcxFOjgJF4UfXSYE"
+          "current_key": "AIzaSyBZ3pqDcjGpZAnnuZxu6K3KGt5h4hi6v1s"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "165085031068-voq9ee77pdvmm805rqpbokghndtsqkk4.apps.googleusercontent.com",
+              "client_id": "847994541518-vb6u22goevrc2d8jr5bu39fhhq7i5fib.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
