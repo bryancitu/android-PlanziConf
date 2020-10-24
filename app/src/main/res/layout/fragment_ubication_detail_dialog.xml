@@ -21,7 +21,8 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="230dp"
@@ -38,7 +39,7 @@
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
                         <TextView
-                            android:id="@+id/tvDetailConferenceHour"
+                            android:id="@+id/tvDetailNombreLugar"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_horizontal"
@@ -58,6 +59,7 @@
                                 android:layout_height="wrap_content"
                                 android:src="@drawable/ic_baseline_person_pin_circle_24"/>
                             <TextView
+                                android:id="@+id/tvUbicationDireccion"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center_horizontal"
@@ -73,6 +75,7 @@
                             android:background="@color/colorPrimary"/>
 
                         <LinearLayout
+                            android:id="@+id/llTelefonoLugar"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="horizontal"
@@ -82,6 +85,7 @@
                                 android:layout_height="wrap_content"
                                 android:src="@drawable/ic_baseline_phone_24"/>
                             <TextView
+                                android:id="@+id/tvUbicationTelefono"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center_horizontal"
@@ -96,6 +100,7 @@
                             android:layout_height="1dp"
                             android:background="@color/colorPrimary"/>
                         <LinearLayout
+                            android:id="@+id/llSitioWeb"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="horizontal"
@@ -105,6 +110,7 @@
                                 android:layout_height="wrap_content"
                                 android:src="@drawable/ic_baseline_link"/>
                             <TextView
+                                android:id="@+id/tvUbicationWebSite"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center_horizontal"

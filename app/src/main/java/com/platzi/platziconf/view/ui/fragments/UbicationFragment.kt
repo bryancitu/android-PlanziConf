@@ -8,10 +8,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.core.content.ContextCompat
+import androidx.navigation.fragment.findNavController
 import com.google.android.gms.maps.*
-import com.google.android.gms.maps.model.BitmapDescriptorFactory
-import com.google.android.gms.maps.model.LatLng
-import com.google.android.gms.maps.model.MarkerOptions
+import com.google.android.gms.maps.model.*
 import com.platzi.platziconf.R
 import com.platzi.platziconf.model.Ubication
 
@@ -20,7 +19,7 @@ import com.platzi.platziconf.model.Ubication
  * Use the [UbicationFragment.newInstance] factory method to
  * create an instance of this fragment.
  */
-class UbicationFragment : Fragment(), OnMapReadyCallback {
+class UbicationFragment : Fragment(), OnMapReadyCallback, GoogleMap.OnMarkerClickListener {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,savedInstanceState: Bundle?): View? {
         return inflater.inflate(R.layout.fragment_ubication, container, false)
@@ -51,6 +50,14 @@ class UbicationFragment : Fragment(), OnMapReadyCallback {
 
         marketOptions.icon(BitmapDescriptorFactory.fromBitmap(smallMaker))
 
-        googleMap.addMarker(marketOptions)
+        googleMap?.addMarker(marketOptions)
+        googleMap?.setOnMarkerClickListener(this)
+
+        googleMap?.setMapStyle(MapStyleOptions.loadRawResourceStyle(context, R.raw.custom_map))
+    }
+
+    override fun onMarkerClick(p0: Marker?): Boolean {
+        findNavController().navigate(R.id.ubicationDetailFragmentDialog)
+        return true
     }
 }
