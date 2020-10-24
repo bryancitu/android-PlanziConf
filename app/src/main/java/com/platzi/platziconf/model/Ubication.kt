@@ -1,6 +1,8 @@
 package com.platzi.platziconf.model
 
-class Ubication {
+import java.io.Serializable
+
+class Ubication: Serializable {
     val name = ""
     val address = ""
     val latitude = ""
