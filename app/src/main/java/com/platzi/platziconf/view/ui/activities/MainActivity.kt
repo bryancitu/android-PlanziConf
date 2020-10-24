@@ -1,8 +1,9 @@
-package com.platzi.platziconf
+package com.platzi.platziconf.view.ui.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.google.firebase.firestore.FirebaseFirestore
+import com.platzi.platziconf.R
 import com.platzi.platziconf.model.Conference
 import com.platzi.platziconf.model.Speaker
 import org.json.JSONArray
